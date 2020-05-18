@@ -7,29 +7,28 @@
 //
 
 import SwiftUI
-//AccessKey
-//SecretKey
-//domain
-
 
 struct SettingItem: View {
-    @State var label : String
-    @State var filed : String
-    @State var value : String
-    
+    @State var cdn : CDN;
     var body: some View {
-        HStack{
-            Text(self.label)
-                .font(.title)
-            
-            TextField(self.label, text: $value)
-                .font(.title)
+        List {
+            Section(header: Text(cdn.name)) {
+                InputItem(label: "域名", filed: "domain", value: cdn.domain)
+                InputItem(label: "accessKey", filed: "accessKey", value: cdn.accessKey)
+                InputItem(label: "secretKey", filed: "secretKey", value: cdn.secretKey)
+            }
         }
     }
 }
 
 struct SettingItem_Previews: PreviewProvider {
     static var previews: some View {
-        SettingItem(label: "域名", filed: "domain", value: "vwood.xyz")
+        SettingItem(cdn: CDN(
+            id: "qiniu",
+            name: "七牛",
+            domain: "vwood.xyz",
+            accessKey: "accessKey",
+            secretKey: "secretKey")
+        )
     }
 }

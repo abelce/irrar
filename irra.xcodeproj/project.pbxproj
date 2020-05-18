@@ -22,7 +22,9 @@
 		6C30B628247231A3006FB35B /* NavData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B627247231A3006FB35B /* NavData.json */; };
 		6C30B62A24725E06006FB35B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B62924725E06006FB35B /* Data.swift */; };
 		6C30B62C247276B5006FB35B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B62B247276B5006FB35B /* Setting.swift */; };
-		6C30B62F247276EE006FB35B /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B62E247276EE006FB35B /* SettingItem.swift */; };
+		6C30B62F247276EE006FB35B /* InputItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B62E247276EE006FB35B /* InputItem.swift */; };
+		6C30B632247299C3006FB35B /* SettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B631247299C3006FB35B /* SettingItem.swift */; };
+		6C30B63424729B04006FB35B /* CDN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B63324729B04006FB35B /* CDN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +67,9 @@
 		6C30B627247231A3006FB35B /* NavData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NavData.json; sourceTree = "<group>"; };
 		6C30B62924725E06006FB35B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		6C30B62B247276B5006FB35B /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
-		6C30B62E247276EE006FB35B /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
+		6C30B62E247276EE006FB35B /* InputItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputItem.swift; sourceTree = "<group>"; };
+		6C30B631247299C3006FB35B /* SettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItem.swift; sourceTree = "<group>"; };
+		6C30B63324729B04006FB35B /* CDN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDN.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		6C30B5EC24722245006FB35B /* irra */ = {
 			isa = PBXGroup;
 			children = (
+				6C30B63024729989006FB35B /* components */,
 				6C30B62024722C50006FB35B /* model */,
 				6C30B5ED24722245006FB35B /* AppDelegate.swift */,
 				6C30B5EF24722245006FB35B /* Document.swift */,
@@ -165,6 +170,7 @@
 				6C30B6252472312E006FB35B /* Config.swift */,
 				6C30B627247231A3006FB35B /* NavData.json */,
 				6C30B62924725E06006FB35B /* Data.swift */,
+				6C30B63324729B04006FB35B /* CDN.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -173,9 +179,17 @@
 			isa = PBXGroup;
 			children = (
 				6C30B62B247276B5006FB35B /* Setting.swift */,
-				6C30B62E247276EE006FB35B /* SettingItem.swift */,
+				6C30B631247299C3006FB35B /* SettingItem.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		6C30B63024729989006FB35B /* components */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B62E247276EE006FB35B /* InputItem.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,12 +326,14 @@
 			files = (
 				6C30B62424722D61006FB35B /* NavRow.swift in Sources */,
 				6C30B5F024722245006FB35B /* Document.swift in Sources */,
+				6C30B632247299C3006FB35B /* SettingItem.swift in Sources */,
 				6C30B5EE24722245006FB35B /* AppDelegate.swift in Sources */,
-				6C30B62F247276EE006FB35B /* SettingItem.swift in Sources */,
+				6C30B62F247276EE006FB35B /* InputItem.swift in Sources */,
 				6C30B6262472312E006FB35B /* Config.swift in Sources */,
 				6C30B61F2472263E006FB35B /* Navs.swift in Sources */,
 				6C30B5F224722245006FB35B /* ContentView.swift in Sources */,
 				6C30B62224722C6C006FB35B /* Nav.swift in Sources */,
+				6C30B63424729B04006FB35B /* CDN.swift in Sources */,
 				6C30B62A24725E06006FB35B /* Data.swift in Sources */,
 				6C30B62C247276B5006FB35B /* Setting.swift in Sources */,
 			);
