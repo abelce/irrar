@@ -22,7 +22,7 @@ class Document: NSDocument {
 
     override func makeWindowControllers() {
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = ContentView().environmentObject(Config())
 
         // Create the window and set the content view.
         let window = NSWindow(
@@ -51,3 +51,9 @@ class Document: NSDocument {
 
 }
 
+
+struct Document_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

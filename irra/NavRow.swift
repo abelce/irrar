@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  NavRow.swift
 //  irra
 //
 //  Created by 唐正雄 on 2020/5/18.
@@ -8,19 +8,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NavRow: View {
+    var nav: Nav
+    
     var body: some View {
         HStack{
-            NavigationView{
-                Navs()
-            }
+            Text(nav.name)
         }
+        .padding(24)
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct NavRow_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavRow(nav: Nav(id: 1, name: "设置", isActive: true))
     }
 }
